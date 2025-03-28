@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(150deg, hsl(40, 100%, 50%), hsl(25, 100%, 50%));
+    background-repeat: no-repeat;
+}
+
+h1::selection {
+    color: aqua;
+}
+
+p::selection {
+    color: orange;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar a {
+    cursor: pointer;
+}
+
+.linkcenter {
+    height: 50px;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+    /* height: calc(100vh - 70px); */
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12rem;
+    position: relative;
+}
+
+#fanta-logo {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 150px;
+    /* background-color: blue; */
+    background-image: url("fanta.png");
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.logos-1 {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    /* background-color: aqua; */
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+#leaf {
+    height: 220px;
+    width: 200px;
+    /* border: 2px solid black; */
+    margin-left: 50px;
+    background-image: url("leaf.webp");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(60deg);
+}
+
+.lemon {
+    height: 220px;
+    width: 200px;
+    /* border: 2px solid black; */
+    margin-left: 200px;
+    background-image: url("lemon.webp");
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#coconut {
+    height: 250px;
+    width: 400px;
+    /* border: 2px solid black; */
+    margin-top: 100px;
+    margin-left: 600px;
+    background-image: url("coconoutleaf.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.logos-2 {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    margin-top: calc(50vh + 30px);
+    /* background-color: brown; */
+    z-index: 10;
+    display: flex;
+}
+
+#orange {
+    position: absolute;
+    z-index: 20;
+    height: 280px;
+    width: 300px;
+    /* border: 2px solid black; */
+    margin-left: calc(50% + 20px);
+    background-image: url("orange.webp");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#leaf-2 {
+    height: 200px;
+    width: 150px;
+    /* border: 2px solid black; */
+    margin-left: calc(80% + 20px);
+    margin-top: 25px;
+    background-image: url("leaf2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 40%, 30%);
+    display: flex;
+}
+
+.picture {
+    width: 40%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plate {
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+    margin-top: 60%;
+    clip-path: ellipse(50% 20%);
+}
+
+.matter {
+    width: 60%;
+    height: 100%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matter-1 {
+    height: 70%;
+    width: 100%;
+    /* background-color: brown; */
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.matter-1 > #p-1 {
+    font-size: 5rem;
+    font-weight: 550;
+}
+
+.matter-1 > #p-2 {
+    width: 80%;
+    text-align: justify;
+    line-height: 1.6;
+    margin-left: 123px;
+
+}
+
+.display {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(150deg, hsl(40, 100%, 50%), hsl(25, 100%, 50%));
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.items {
+    height: 550px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    /* background-color: fuchsia; */
+    top: -50px;
+    z-index: 10;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-1 {
+    background-image: url("cocacola.png");
+}
+
+#img-2 {
+    background-image: url("fanta.png");
+    background-size: 160%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-3 {
+    background-image: url("pepsi.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lemon-1 {
+    position: absolute;
+    height: 220px;
+    width: 200px;
+    /* border: 2px solid black; */
+    background-image: url("lemon.webp");
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    top: -150px;
+}
+
+.option {
+    position: relative;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.option > p {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.buy {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(150deg, hsl(40, 100%, 50%), hsl(25, 100%, 50%));
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.buy:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+.buy:active {
+    color: orange;
+    background: white;
+}
